@@ -4,8 +4,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-//Require autoload file
+//Require necessary files
 require_once('vendor/autoload.php');
+require_once('model/data-layer.php');
 
 //Instantiate Fat-Free
 $f3 = Base::instance();
@@ -21,6 +22,9 @@ $f3->route('GET /', function($f3) {
     $f3->set('password', sha1('Password01'));
     $f3->set('title', 'Working with Templates');
     $f3->set('ftemp', 67);
+    $f3->set('veg', array('carrot', 'potato', 'bok choy'));
+    $f3->set('fruits', getFruit());
+    $f3->set('salaries', getSalary());
 
     //echo "Home page";
     //Display a view
