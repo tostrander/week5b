@@ -25,6 +25,9 @@ $f3->route('GET /', function($f3) {
     $f3->set('veg', array('carrot', 'potato', 'bok choy'));
     $f3->set('fruits', getFruit());
     $f3->set('salaries', getSalary());
+    $f3->set('num', 10);
+    $f3->set('preferredCustomer', true);
+    //$f3->set('myPet', new Pet('Fido'));
 
     //echo "Home page";
     //Display a view
