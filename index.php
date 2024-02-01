@@ -14,7 +14,9 @@ $f3 = Base::instance();
 
 // Define a default route
 $f3->route('GET /', function() {
-    echo "<h1>Week 5</h1>";
+    //echo "<h1>Week 5</h1>";
+    $template = new Template();
+    echo $template->render('views/home.html');
 });
 
 // Run fat-free
