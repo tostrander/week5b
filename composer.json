@@ -1,0 +1,17 @@
+{
+  "name": "tostrander/328/week5b",
+  "description": "Practice Templating",
+  "authors": [
+    {
+      "name": "Tina Ostrander",
+      "email": "tostrander@greenriver.edu"
+    },
+    {
+      "name": "Joe Shmo",
+      "email": "jshmo@greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
